@@ -4,13 +4,29 @@
  */
 
 package org.uniqueidea.mathutil.main;
+
+import org.uniqueidea.mathutil.core.MathUtil;
+
 /**
  *
  * @author lequa
  */
 public class Main {
 
-    public static void main(String[] args) {
-        System.out.println("Hi all, this app is built by using Maven");
+    public static void main(String[] args) {//psvm
+       // crt space tìm trong jdk , class
+        System.out.println("Hi this app build with maven");
+       tryTDDFirst();
     }
+    public static void tryTDDFirst(){
+        //tc #1
+        // n = 0 => 1 ? 
+        long expected = 1;
+        long actual = MathUtil.getFactorial(0);
+        //sai ham vua viet
+         //so sanh 2 gia tri
+        System.out.println("0! Status | excpected = " + expected + "| Actual" + actual);
+    }
+
+    
 }
